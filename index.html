@@ -14,7 +14,7 @@
   <body class="relative overflow-hidden">
     <div
       id="mobile-nav"
-      class="animate-slideup absolute w-full h-screen bg-veryDarkBlue bg-opacity-90 flex-col justify-between hidden z-[999]"
+      class="animate-slideup top-0 fixed w-screen h-screen bg-veryDarkBlue bg-opacity-90 flex-col justify-between hidden z-[999]"
     >
       <section>
         <div class="flex w-[90%] mx-auto justify-between p-6 items-center">
@@ -91,7 +91,7 @@
     </div>
     <nav
       id="navbar"
-      class="container flex w-[90%] sm:w-[80rem] mx-auto p-6 justify-between items-center"
+      class="container flex w-[98%] sm:w-[80rem] mx-auto p-6 justify-between items-center"
     >
       <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fill-rule="evenodd">
@@ -154,16 +154,40 @@
       </svg>
     </nav>
     <main
-      class="h-[500px] w-[90%] mt mx-auto flex flex-col lg:flex-row justify-between relative"
+      class="h-[500px] w-[100%] mx-auto flex flex-col lg:flex-row justify-between mt-28"
     >
-      <section class="order-2 lg:order-1"></section>
-      <article class="order-1 lg:order-2 relative border-2 border-red-500">
+      <section class="order-2 lg:order-1 flex-1 lg:ml-16 2xl:ml-36 mt-16">
+        <h1 class="text-[40px] font-bold text-center lg:text-left">
+          A Simple Bookmark <br />
+          Manager
+        </h1>
+        <p class="text-gray-500 text-center lg:text-left mt-10">
+          A clean and simple interface to organize your favourite
+          <br class="hidden lg:block" />
+          wesbites.Open a new browsert and see your sites load
+          <br class="hidden lg:block" />
+          instantly.Try it for free
+        </p>
+        <div class="flex gap-x-4 justify-center lg:justify-start mt-10">
+          <button
+            class="p-4 bg-softBlue rounded-lg text-white font-medium hover:bg-white border-2 border-transparent hover:border-softBlue hover:text-softBlue transition-[background,border,color] duration-[0.3s]"
+          >
+            Get it on Chrome
+          </button>
+          <button
+            class="p-4 rounded-lg text-[#575a63] font-medium bg-[#f6f8f7] shadow-md border-2 border-transparent hover:border-[#575a63] hover:bg-white transition-[background,border,color] duration-[0.3s]"
+          >
+            Get it on Firefox
+          </button>
+        </div>
+      </section>
+      <article class="order-1 lg:order-2 relative">
         <img
-          class="relative z-10 flex-1 lg:left-14"
+          class="relative z-10 flex-1"
           src="./Assests/images/illustration-hero.svg"
         />
         <div
-          class="bg-softBlue w-full h-[80%] absolute top-[20%] rounded-full translate-x-[30%] lg:translate-x-[40%]"
+          class="bg-softBlue w-[70%] h-[70%] absolute top-[20%] left-32 rounded-l-full right-0"
         ></div>
       </article>
     </main>
