@@ -91,7 +91,7 @@
     </div>
     <nav
       id="navbar"
-      class="container flex w-[98%] sm:w-[80rem] mx-auto p-6 justify-between items-center"
+      class="container flex w-[90%] lg:w-[80rem] mx-auto p-6 justify-between items-center"
     >
       <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fill-rule="evenodd">
@@ -133,7 +133,7 @@
         </li>
         <li>
           <a
-            class="font-light text-xs tracking-wider text-veryDarkBlue hover:text-softRed transition-[border,color] duration-[0.3s] hover:shadow-[0_0_2px_0px_rgba(0,0,0,0.3)] hover:shadow-softBlue px-6 py-2 border-2 border-transparent hover:border-softRed rounded-lg"
+            class="font-light text-xs tracking-wider text-white bg-softRed hover:text-softRed hover:bg-white transition-[border,color,background] duration-[0.3s] hover:shadow-[0_0_2px_0px_rgba(0,0,0,0.3)] hover:shadow-softBlue px-6 py-2 border-2 border-transparent hover:border-softRed rounded-lg"
             href="/"
             >LOGIN</a
           >
@@ -154,40 +154,43 @@
       </svg>
     </nav>
     <main
-      class="w-[100%] mx-auto flex flex-col lg:flex-row justify-between mt-28"
+      class="xl:w-[80rem] w-[90%] mx-auto lg:h-[500px] flex flex-col lg:flex-row justify-between mt-16 lg:mt-28"
     >
-      <section class="order-2 lg:order-1 flex-1 lg:ml-16 2xl:ml-36 mt-16">
-        <h1 class="text-[40px] font-bold text-center lg:text-left">
-          A Simple Bookmark <br />
-          Manager
+      <section class="flex-1 order-2 lg:order-1 mt-16">
+        <h1
+          class="ml-6 text-3xl text-center lg:text-left lg:text-5xl font-medium"
+        >
+          A Simple Bookmark <br />Manager
         </h1>
-        <p class="text-gray-500 text-center lg:text-left mt-10">
+        <p class="ml-6 text-base text-gray-500 mt-10 text-center lg:text-left">
           A clean and simple interface to organize your favourite
-          <br class="hidden lg:block" />
-          wesbites.Open a new browsert and see your sites load
-          <br class="hidden lg:block" />
-          instantly.Try it for free
+          <br class="hidden md:block" />
+          websites.Open a new browser tab and see you sites load
+          <br class="hidden md:block" />
+          instantly.Try it for free.
         </p>
-        <div class="flex gap-x-4 justify-center lg:justify-start mt-10">
+        <div
+          class="flex lg:ml-6 gap-x-4 mt-10 justify-center lg:justify-start w-[90%] mx-auto h-[70px]"
+        >
           <button
-            class="p-4 bg-softBlue rounded-lg text-white font-medium hover:bg-white border-2 border-transparent hover:border-softBlue hover:text-softBlue transition-[background,border,color] duration-[0.3s]"
+            class="w-[150px] h-[50px] bg-softBlue text-white font-medium rounded-lg border-2 border-transparent transition-[color,border,background] duration-[0.3s] hover:bg-white hover:text-softBlue hover:border-softBlue"
           >
             Get it on Chrome
           </button>
           <button
-            class="p-4 rounded-lg text-[#575a63] font-medium bg-[#f6f8f7] shadow-md border-2 border-transparent hover:border-[#575a63] hover:bg-white transition-[background,border,color] duration-[0.3s]"
+            class="w-[150px] h-[50px] bg-[#f7f7f7] text-[#60606a] font-medium rounded-lg shadow-lg border-2 border-transparent transition-[color,border,background] duration-[0.3s] hover:bg-white hover:border-[#60606a]"
           >
             Get it on Firefox
           </button>
         </div>
       </section>
-      <article class="order-1 lg:order-2 relative">
+      <article class="relative flex-1 order-1 lg:order-2">
         <img
-          class="relative z-10 flex-1"
+          class="relative 2xl:translate-x-24 z-20"
           src="./Assests/images/illustration-hero.svg"
         />
         <div
-          class="bg-softBlue w-[70%] h-[70%] left-56 absolute top-[20%] rounded-l-full right-0"
+          class="absolute top-14 md:top-32 translate-x-[30%] lg:translate-x-[40%] bg-softBlue w-full h-[80%] md:h-[70%] rounded-l-full z-10"
         ></div>
       </article>
     </main>
