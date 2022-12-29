@@ -11,6 +11,7 @@ module.exports = {
       },
       animation: {
         slideup: "slideup 0.8s linear",
+        slidedown: "slidedown 0.8s linear",
       },
       keyframes: {
         slideup: {
