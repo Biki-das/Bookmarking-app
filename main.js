@@ -77,6 +77,6 @@ window.addEventListener("load", () => {
     tab3Text.classList.remove("hidden");
     tab3.style.color = "hsl(229,31%,21%)";
     tab1.style.color = null;
-    tab3.style.color = null;
+    tab2.style.color = null;
   });
 });
