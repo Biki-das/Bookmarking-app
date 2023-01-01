@@ -36,9 +36,6 @@ window.addEventListener("load", () => {
   }
 
   tab1.addEventListener("click", () => {
-    tab1.style.color = "hsl(229,31%,21%)";
-    tab2.style.color = "hsl(229,8%,60%)";
-    tab3.style.color = "hsl(229,8%,60%)";
     tab1Underline.classList.remove("hidden");
     tab2Underline.classList.add("hidden");
     tab3Underline.classList.add("hidden");
@@ -48,14 +45,12 @@ window.addEventListener("load", () => {
     tab1Text.classList.remove("hidden");
     tab2Text.classList.add("hidden");
     tab3Text.classList.add("hidden");
+    tab1.style.color = "hsl(229,31%,21%)";
     tab2.style.color = null;
     tab3.style.color = null;
   });
 
   tab2.addEventListener("click", () => {
-    tab1.style.color = "hsl(229,8%,60%)";
-    tab2.style.color = "hsl(229,31%,21%)";
-    tab3.style.color = "hsl(229,8%,60%)";
     tab1Underline.classList.add("hidden");
     tab2Underline.classList.remove("hidden");
     tab3Underline.classList.add("hidden");
@@ -65,14 +60,12 @@ window.addEventListener("load", () => {
     tab1Text.classList.add("hidden");
     tab2Text.classList.remove("hidden");
     tab3Text.classList.add("hidden");
+    tab2.style.color = "hsl(229,31%,21%)";
     tab1.style.color = null;
     tab3.style.color = null;
   });
 
   tab3.addEventListener("click", () => {
-    tab1.style.color = "hsl(229,8%,60%)";
-    tab2.style.color = "hsl(229,8%,60%)";
-    tab3.style.color = "hsl(229,31%,21%)";
     tab1Underline.classList.add("hidden");
     tab2Underline.classList.add("hidden");
     tab3Underline.classList.remove("hidden");
@@ -82,7 +75,8 @@ window.addEventListener("load", () => {
     tab1Text.classList.add("hidden");
     tab2Text.classList.add("hidden");
     tab3Text.classList.remove("hidden");
+    tab3.style.color = "hsl(229,31%,21%)";
     tab1.style.color = null;
-    tab2.style.color = null;
+    tab3.style.color = null;
   });
 });
