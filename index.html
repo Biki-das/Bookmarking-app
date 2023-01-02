@@ -167,7 +167,7 @@
           A Simple Bookmark <br />Manager
         </h1>
         <p
-          class="ml-6 text-lg lg:text-xl text-grayishBlue mt-10 text-center lg:text-left"
+          class="ml-6 text-base lg:text-xl text-grayishBlue mt-10 text-center lg:text-left"
         >
           A clean and simple interface to organize your favourite
           <br class="hidden md:block" />
@@ -208,13 +208,15 @@
       >
         Features
       </h2>
-      <p class="text-center text-lg lg:text-xl text-grayishBlue mt-9">
-        Our aim is to make it quick and easy for you to access your
+      <p class="text-center text-base lg:text-xl text-grayishBlue mt-9">
+        Our aim is to make it quick and easy for you <br class="lg:hidden" />
+        to access your
         <br class="hidden lg:block" />
-        favourite websites.Your bookmark sync between your devices<br
+        favourite websites. Your bookmark sync between your devices<br
           class="hidden lg:block"
         />
-        so you can access them on the go.
+        so <br class="lg:hidden" />
+        you can access them on the go.
       </p>
       <div
         class="flex flex-col lg:flex-row justify-center gap-x-32 mt-16 items-center cursor-pointer"
@@ -267,7 +269,7 @@
       </div>
     </section>
     <section
-      class="xl:w-[80rem] w-[90%] mx-auto mt-16 lg:mt-24 lg:h-[500px] flex flex-col lg:flex-row justify-between"
+      class="xl:w-[80rem] w-[90%] mx-auto mt-10 lg:mt-24 lg:h-[500px] flex flex-col lg:flex-row justify-between"
     >
       <!-- Tab-1 -->
 
@@ -297,7 +299,7 @@
           control over how you manage <br class="lg:hidden" />
           your favourite sites.
         </p>
-        <div class="flex justify-center lg:justify-start">
+        <div class="hidden lg:flex justify-start">
           <button
             class="bg-softBlue w-[114px] h-[50px] rounded-lg text-white mt-10 font-medium"
           >
@@ -314,12 +316,12 @@
           src="./Assests/images/illustration-features-tab-2.svg"
         />
         <div
-          class="absolute top-20 -translate-x-14 lg:-translate-x-[20%] left-0 bg-softBlue w-full lg:w-full md:w-[80%] h-[95%] lg:h-[70%] rounded-r-full z-10"
+          class="absolute top-20 -translate-x-14 lg:-translate-x-[20%] left-0 bg-softBlue w-full lg:w-full md:w-[80%] h-[70%] md:h-[95%] lg:h-[70%] rounded-r-full z-10"
         ></div>
       </article>
       <div
         id="tab-2-text"
-        class="flex-1 mt-28 lg:mt-16 lg:translate-x-[25%] animate-textfadein hidden"
+        class="flex-1 mt-6 md:mt-16 lg:translate-x-[25%] animate-textfadein hidden"
       >
         <h3
           class="text-veryDarkBlue text-2xl lg:text-3xl font-medium text-center lg:text-left"
@@ -329,13 +331,15 @@
         <p
           class="text-grayishBlue text-center lg:text-left text-sm lg:text-xl mt-5"
         >
-          Our powerful search will help find you saved
+          Our powerful search will help find <br class="lg:hidden" />
+          you saved
           <br class="hidden lg:block" />
-          sites in no time at all. No need to trawl through all of
+          sites in no time at all. <br class="lg:hidden" />
+          No need to trawl through all of
           <br class="hidden lg:block" />
           your bookmarks.
         </p>
-        <div class="flex justify-center lg:justify-start">
+        <div class="hidden lg:flex justify-start">
           <button
             class="bg-softBlue w-[114px] h-[50px] rounded-lg text-white mt-10 font-medium"
           >
@@ -357,7 +361,7 @@
       </article>
       <div
         id="tab-3-text"
-        class="flex-1 mt-16 lg:translate-x-[20%] hidden animate-textfadein"
+        class="flex-1 mt-6 md:mt-14 lg:translate-x-[20%] hidden animate-textfadein"
       >
         <h3
           class="text-veryDarkBlue text-2xl lg:text-3xl font-medium text-center lg:text-left"
@@ -375,11 +379,82 @@
           <br class="hidden lg:block" />
           the click of a button
         </p>
-        <div class="flex justify-center lg:justify-start">
+        <div class="hidden lg:flex justify-center lg:justify-start">
           <button
             class="bg-softBlue w-[114px] h-[50px] rounded-lg text-white mt-10 font-medium"
           >
             More Info
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="xl:w-[80rem] w-[90%] h-[500px] mt-36 lg:mt-0 mx-auto">
+      <h4 class="text-center text-2xl lg:text-3xl font-medium">
+        Download the extension
+      </h4>
+
+      <p class="text-center text-grayishBlue text-sm lg:text-xl mt-5">
+        we 've got more browsers in the pipeline. <br class="lg:hidden" />
+        please do let us know if
+        <br class="hidden lg:block" />
+        you 've got a <br class="lg:hidden" />
+        favourite you'd like us to priortize
+      </p>
+
+      <!-- Extension section -->
+      <div
+        class="mx-auto w-full items-center lg:w-[80%] lg:h-[500px] mt-10 flex flex-col lg:flex-row justify-evenly"
+      >
+        <div
+          class="w-[300px] h-[400px] shadow-xl rounded-lg flex flex-col items-center"
+        >
+          <img src="./Assests/images/logo-chrome.svg" class="mt-10" />
+          <div>
+            <p class="text-center text-xl text-veryDarkBlue font-bold mt-10">
+              Add to Chrome
+            </p>
+            <p class="text-center text-grayishBlue mt-4">Minimum version 62</p>
+          </div>
+          <img src="./Assests/images/bg-dots.svg" class="mt-10" />
+          <button
+            class="h-[50px] w-[250px] bg-softBlue text-white font-medium rounded-lg mt-8"
+          >
+            Add & Install Extension
+          </button>
+        </div>
+        <div
+          class="w-[300px] h-[400px] shadow-xl rounded-lg flex flex-col items-center lg:translate-y-10 translate-y-0"
+        >
+          <img src="./Assests/images/logo-firefox.svg" class="mt-10" />
+          <div>
+            <p class="text-center text-xl text-veryDarkBlue font-bold mt-10">
+              Add to Firefox
+            </p>
+            <p class="text-center text-grayishBlue mt-4">Minimum version 55</p>
+          </div>
+          <img src="./Assests/images/bg-dots.svg" class="mt-10" />
+          <button
+            class="h-[50px] w-[250px] bg-softBlue text-white font-medium rounded-lg mt-8"
+          >
+            Add & Install Extension
+          </button>
+        </div>
+        <div
+          class="w-[300px] h-[400px] shadow-xl rounded-lg flex flex-col items-center lg:translate-y-20 translate-y-0"
+        >
+          <img src="./Assests/images/logo-opera.svg" class="mt-10" />
+          <div>
+            <p class="text-center text-xl text-veryDarkBlue font-bold mt-10">
+              Add to Opera
+            </p>
+            <p class="text-center text-grayishBlue mt-4">Minimum version 46</p>
+          </div>
+          <img src="./Assests/images/bg-dots.svg" class="mt-10" />
+          <button
+            class="h-[50px] w-[250px] bg-softBlue text-white font-medium rounded-lg mt-8"
+          >
+            Add & Install Extension
           </button>
         </div>
       </div>

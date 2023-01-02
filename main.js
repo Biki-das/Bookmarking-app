@@ -17,8 +17,6 @@ const tab1Underline = document.querySelector("#tab-1-underline");
 const tab2Underline = document.querySelector("#tab-2-underline");
 const tab3Underline = document.querySelector("#tab-3-underline");
 
-console.log(tab2);
-
 window.addEventListener("load", () => {
   hamBurgerIcon.addEventListener("click", OpenMobileNav);
   closeIcon.addEventListener("click", closeMobileNav);
