@@ -13,7 +13,7 @@ module.exports = {
         slideup: "slideup 0.8s linear",
         slidedown: "slidedown 0.8s linear",
         slideright: "slideright 0.8s linear",
-        slideleft: "slideleft 0.8s linear both",
+        textfadein: "textfadein 0.8s linear",
       },
       keyframes: {
         slideup: {
@@ -28,9 +28,9 @@ module.exports = {
           "0%": { transform: "translateX(-50%)", opacity: "0" },
           "100%": { opacity: "1", transform: "none" },
         },
-        slideleft: {
-          "0%": { transform: "translateX(-50%)", opacity: "0" },
-          "100%": { opacity: "1", transform: "none" },
+        textfadein: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
     },
