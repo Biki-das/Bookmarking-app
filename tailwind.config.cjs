@@ -12,6 +12,8 @@ module.exports = {
       animation: {
         slideup: "slideup 0.8s linear",
         slidedown: "slidedown 0.8s linear",
+        slideright: "slideright 0.8s linear",
+        slideleft: "slideleft 0.8s linear both",
       },
       keyframes: {
         slideup: {
@@ -20,6 +22,14 @@ module.exports = {
         },
         slidedown: {
           "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { opacity: "1", transform: "none" },
+        },
+        slideright: {
+          "0%": { transform: "translateX(-50%)", opacity: "0" },
+          "100%": { opacity: "1", transform: "none" },
+        },
+        slideleft: {
+          "0%": { transform: "translateX(-50%)", opacity: "0" },
           "100%": { opacity: "1", transform: "none" },
         },
       },
