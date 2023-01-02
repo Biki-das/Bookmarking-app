@@ -24,13 +24,11 @@ window.addEventListener("load", () => {
   function OpenMobileNav() {
     mobileNav.classList.remove("hidden");
     mobileNav.classList.add("flex");
-    navBar.classList.add("invisible");
   }
 
   function closeMobileNav() {
     mobileNav.classList.add("hidden");
     mobileNav.classList.remove("flex");
-    navBar.classList.remove("invisible");
   }
 
   tab1.addEventListener("click", () => {
