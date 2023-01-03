@@ -2,7 +2,6 @@ import "./style.css";
 import redArrow from "./Assests/images/icon-arrow-red.svg";
 import blueArrow from "./Assests/images/icon-arrow.svg";
 
-console.log(redArrow);
 const hamBurgerIcon = document.querySelector("#hamburger-icon");
 const closeIcon = document.querySelector("#close-icon");
 const mobileNav = document.querySelector("#mobile-nav");

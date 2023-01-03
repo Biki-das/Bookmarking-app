@@ -10,9 +10,9 @@ module.exports = {
         veryDarkBlue: "hsl(229,31%,21%)",
       },
       animation: {
-        slideup: "slideup 0.8s linear",
         slidedown: "slidedown 0.8s linear",
         slideright: "slideright 0.8s linear",
+        slideleft: "slideleft 0.3s linear",
         shiftup: "shiftup 0.8s linear both",
         textfadein: "textfadein 0.8s linear",
         fasttextfadein: "fasttextfadein 0.5s linear",
@@ -28,6 +28,10 @@ module.exports = {
         },
         slideright: {
           "0%": { transform: "translateX(-50%)", opacity: "0" },
+          "100%": { opacity: "1", transform: "none" },
+        },
+        slideleft: {
+          "0%": { transform: "translateX(50%)", opacity: "0" },
           "100%": { opacity: "1", transform: "none" },
         },
         textfadein: {
