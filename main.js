@@ -6,7 +6,6 @@ console.log(redArrow);
 const hamBurgerIcon = document.querySelector("#hamburger-icon");
 const closeIcon = document.querySelector("#close-icon");
 const mobileNav = document.querySelector("#mobile-nav");
-const navBar = document.querySelector("#navbar");
 const tab1 = document.querySelector("#tab-1");
 const tab2 = document.querySelector("#tab-2");
 const tab3 = document.querySelector("#tab-3");
@@ -19,21 +18,13 @@ const tab3Text = document.querySelector("#tab-3-text");
 const tab1Underline = document.querySelector("#tab-1-underline");
 const tab2Underline = document.querySelector("#tab-2-underline");
 const tab3Underline = document.querySelector("#tab-3-underline");
-const accord1 = document.querySelector("#accord-1");
-const accord1Text = document.querySelector("#accord-1-text");
-const accordArrow = document.querySelector("#accord-arrow");
-
-accord1.addEventListener("click", () => {
-  accord1Text.classList.toggle("hidden");
-  !accord1Text.classList.contains("hidden")
-    ? ((accordArrow.src = redArrow), accordArrow.classList.add("-rotate-180"))
-    : ((accordArrow.src = blueArrow),
-      accordArrow.classList.remove("-rotate-180"));
-});
+const accordions = document.querySelectorAll(".accordions");
 
 window.addEventListener("load", () => {
   hamBurgerIcon.addEventListener("click", OpenMobileNav);
   closeIcon.addEventListener("click", closeMobileNav);
+
+  /* Navbar functionality */
 
   function OpenMobileNav() {
     mobileNav.classList.remove("hidden");
@@ -44,6 +35,8 @@ window.addEventListener("load", () => {
     mobileNav.classList.add("hidden");
     mobileNav.classList.remove("flex");
   }
+
+  /* tab functionality */
 
   tab1.addEventListener("click", () => {
     tab1Underline.classList.remove("hidden");
@@ -88,5 +81,20 @@ window.addEventListener("load", () => {
     tab3.style.color = "hsl(229,31%,21%)";
     tab1.style.color = null;
     tab2.style.color = null;
+  });
+
+  /* accordion functionality */
+
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", (e) => {
+      let currAccordion = e.target.children[1];
+      let currAccordionArrow = e.target.children[0].children[1];
+      currAccordion.classList.toggle("hidden");
+      !currAccordion.classList.contains("hidden")
+        ? ((currAccordionArrow.src = redArrow),
+          currAccordionArrow.classList.add("-rotate-180"))
+        : ((currAccordionArrow.src = blueArrow),
+          currAccordionArrow.classList.remove("-rotate-180"));
+    });
   });
 });

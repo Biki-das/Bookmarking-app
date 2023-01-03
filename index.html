@@ -462,7 +462,7 @@
 
     <!-- Accordion/Faq section -->
 
-    <section class="xl:w-[80rem] w-[90%] mx-auto m-16 lg:mt-40">
+    <section class="xl:w-[80rem] w-[90%] mx-auto mt-16 lg:mt-40">
       <h5 class="text-center text-2xl lg:text-3xl font-medium">
         Frequently Asked <br class="lg:hidden" />
         Questions
@@ -476,32 +476,127 @@
         please feel free to email us
       </p>
 
-      <div class="lg:w-[80%] w-full mx-auto">
+      <div class="lg:w-[80%] w-full mx-auto mt-20">
         <hr class="mt-6 lg:w-[60%] w-full mx-auto hidden lg:block" />
-        <div
-          id="accord-1"
-          class="flex w-[90%] md:w-[60%] mx-auto items-center justify-between mt-5 cursor-pointer"
-        >
-          <p
-            class="text-veryDarkBlue font-normal hover:text-softRed transition-[color] duration-[0.3s]"
+
+        <!-- accordion-1 -->
+
+        <div class="accordions cursor-pointer">
+          <div
+            class="pointer-events-none flex w-[90%] md:w-[60%] mx-auto items-center justify-between mt-5 cursor-pointer"
           >
-            What is Bookmark?
-          </p>
-          <img
-            class="transition-[transform] duration-[0.3s]"
-            id="accord-arrow"
-            src="./Assests/images/icon-arrow.svg"
-          />
+            <p
+              class="text-sm lg:text-base text-veryDarkBlue font-normal hover:text-softRed transition-[color] duration-[0.3s]"
+            >
+              What is Bookmark?
+            </p>
+            <img
+              class="pointer-events-none accordion-arrow-img transition-[transform] duration-[0.3s]"
+              src="./Assests/images/icon-arrow.svg"
+            />
+          </div>
+          <div
+            class="pointer-events-none w-[90%] md:w-[60%] mx-auto mt-10 hidden animate-fasttextfadein"
+          >
+            <p class="text-grayishBlue">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
+            </p>
+          </div>
         </div>
-        <div id="accord-1-text" class="w-[90%] md:w-[60%] mx-auto mt-10 hidden">
-          <p class="text-grayishBlue">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
-            quis quam ornare mattis.
-          </p>
+        <hr class="mt-6 md:w-[60%] w-full mx-auto" />
+
+        <!-- accordion-2  -->
+
+        <div class="accordions cursor-pointer">
+          <div
+            class="pointer-events-none flex w-[90%] md:w-[60%] mx-auto items-center justify-between mt-5 cursor-pointer"
+          >
+            <p
+              class="text-sm lg:text-base text-veryDarkBlue font-normal hover:text-softRed transition-[color] duration-[0.3s]"
+            >
+              How can i Request a new Browser?
+            </p>
+            <img
+              class="pointer-events-none transition-[transform] duration-[0.3s]"
+              src="./Assests/images/icon-arrow.svg"
+            />
+          </div>
+          <div
+            class="pointer-events-none w-[90%] md:w-[60%] mx-auto mt-10 hidden animate-fasttextfadein"
+          >
+            <p class="text-grayishBlue">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
+            </p>
+          </div>
         </div>
 
-        <hr class="mt-6 lg:w-[60%] w-full mx-auto" />
+        <hr class="mt-6 md:w-[60%] w-full mx-auto" />
+
+        <!-- accordion-3 -->
+
+        <div class="accordions cursor-pointer">
+          <div
+            class="pointer-events-none flex w-[90%] md:w-[60%] mx-auto items-center justify-between mt-5 cursor-pointer"
+          >
+            <p
+              class="text-sm lg:text-base text-veryDarkBlue font-normal hover:text-softRed transition-[color] duration-[0.3s]"
+            >
+              Is there a mobile app?
+            </p>
+            <img
+              class="pointer-events-none transition-[transform] duration-[0.3s]"
+              src="./Assests/images/icon-arrow.svg"
+            />
+          </div>
+          <div
+            class="pointer-events-none w-[90%] md:w-[60%] mx-auto mt-10 hidden animate-fasttextfadein"
+          >
+            <p class="text-grayishBlue">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+        </div>
+
+        <hr class="mt-6 md:w-[60%] w-full mx-auto" />
+
+        <!-- accordion-4 -->
+
+        <div class="accordions cursor-pointer">
+          <div
+            class="pointer-events-none flex w-[90%] md:w-[60%] mx-auto items-center justify-between mt-5 cursor-pointer"
+          >
+            <p
+              class="text-sm lg:text-base text-veryDarkBlue font-normal hover:text-softRed transition-[color] duration-[0.3s]"
+            >
+              What about other Chromium browsers?
+            </p>
+            <img
+              class="pointer-events-none transition-[transform] duration-[0.3s]"
+              src="./Assests/images/icon-arrow.svg"
+            />
+          </div>
+          <div
+            class="pointer-events-none w-[90%] md:w-[60%] mx-auto mt-10 hidden animate-fasttextfadein"
+          >
+            <p class="text-grayishBlue">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit.
+            </p>
+          </div>
+        </div>
+
+        <hr class="mt-6 md:w-[60%] w-full mx-auto" />
       </div>
     </section>
 
