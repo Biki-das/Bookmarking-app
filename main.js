@@ -1,5 +1,8 @@
 import "./style.css";
+import redArrow from "./Assests/images/icon-arrow-red.svg";
+import blueArrow from "./Assests/images/icon-arrow.svg";
 
+console.log(redArrow);
 const hamBurgerIcon = document.querySelector("#hamburger-icon");
 const closeIcon = document.querySelector("#close-icon");
 const mobileNav = document.querySelector("#mobile-nav");
@@ -16,6 +19,17 @@ const tab3Text = document.querySelector("#tab-3-text");
 const tab1Underline = document.querySelector("#tab-1-underline");
 const tab2Underline = document.querySelector("#tab-2-underline");
 const tab3Underline = document.querySelector("#tab-3-underline");
+const accord1 = document.querySelector("#accord-1");
+const accord1Text = document.querySelector("#accord-1-text");
+const accordArrow = document.querySelector("#accord-arrow");
+
+accord1.addEventListener("click", () => {
+  accord1Text.classList.toggle("hidden");
+  !accord1Text.classList.contains("hidden")
+    ? ((accordArrow.src = redArrow), accordArrow.classList.add("-rotate-180"))
+    : ((accordArrow.src = blueArrow),
+      accordArrow.classList.remove("-rotate-180"));
+});
 
 window.addEventListener("load", () => {
   hamBurgerIcon.addEventListener("click", OpenMobileNav);

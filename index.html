@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="en" class="overflow-x-hidden scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -361,7 +361,7 @@
       </article>
       <div
         id="tab-3-text"
-        class="flex-1 mt-6 md:mt-14 lg:translate-x-[20%] hidden animate-textfadein"
+        class="flex-1 mt-10 md:mt-14 lg:translate-x-[20%] hidden animate-textfadein"
       >
         <h3
           class="text-veryDarkBlue text-2xl lg:text-3xl font-medium text-center lg:text-left"
@@ -389,13 +389,13 @@
       </div>
     </section>
 
-    <section class="xl:w-[80rem] w-[90%] lg:h-[500px] mt-36 lg:mt-0 mx-auto">
+    <section class="xl:w-[80rem] w-[90%] mt-36 lg:mt-0 mx-auto">
       <h4 class="text-center text-2xl lg:text-3xl font-medium">
         Download the extension
       </h4>
 
       <p class="text-center text-grayishBlue text-sm lg:text-xl mt-5">
-        we 've got more browsers in the pipeline. <br class="lg:hidden" />
+        we've got more browsers in the pipeline. <br class="lg:hidden" />
         please do let us know if
         <br class="hidden lg:block" />
         you 've got a <br class="lg:hidden" />
@@ -407,7 +407,7 @@
         class="mx-auto w-full items-center lg:w-[80%] h-auto lg:h-[500px] mt-10 flex flex-col lg:flex-row justify-evenly"
       >
         <div
-          class="w-[300px] h-[400px] shadow-xl rounded-lg flex flex-col items-center"
+          class="w-[300px] h-[400px] shadow-xl rounded-lg flex flex-col items-center hover:scale-[1.1] transition-[transform] duration-[0.3s]"
         >
           <img src="./Assests/images/logo-chrome.svg" class="mt-10" />
           <div>
@@ -424,7 +424,7 @@
           </button>
         </div>
         <div
-          class="w-[300px] h-[400px] shadow-xl rounded-lg flex flex-col items-center lg:translate-y-10 translate-y-0"
+          class="w-[300px] h-[400px] shadow-xl rounded-lg flex flex-col items-center lg:translate-y-10 translate-y-0 mt-3 lg:mt-0 hover:scale-[1.1] transition-[transform] duration-[0.3s]"
         >
           <img src="./Assests/images/logo-firefox.svg" class="mt-10" />
           <div>
@@ -441,7 +441,7 @@
           </button>
         </div>
         <div
-          class="w-[300px] h-[400px] shadow-xl rounded-lg flex flex-col items-center lg:translate-y-20 translate-y-0"
+          class="w-[300px] h-[400px] shadow-xl rounded-lg flex flex-col items-center lg:translate-y-20 translate-y-0 mt-3 lg:mt-0 hover:scale-[1.1] transition-[transform] duration-[0.3s]"
         >
           <img src="./Assests/images/logo-opera.svg" class="mt-10" />
           <div>
@@ -457,6 +457,51 @@
             Add & Install Extension
           </button>
         </div>
+      </div>
+    </section>
+
+    <!-- Accordion/Faq section -->
+
+    <section class="xl:w-[80rem] w-[90%] mx-auto m-16 lg:mt-40">
+      <h5 class="text-center text-2xl lg:text-3xl font-medium">
+        Frequently Asked <br class="lg:hidden" />
+        Questions
+      </h5>
+
+      <p class="text-center text-grayishBlue text-sm lg:text-xl mt-5">
+        Here are some of our FAQs. if you have any <br class="lg:hidden" />
+        other questions
+        <br class="hidden lg:block" />
+        you'd like answered <br class="lg:hidden" />
+        please feel free to email us
+      </p>
+
+      <div class="lg:w-[80%] w-full mx-auto">
+        <hr class="mt-6 lg:w-[60%] w-full mx-auto hidden lg:block" />
+        <div
+          id="accord-1"
+          class="flex w-[90%] md:w-[60%] mx-auto items-center justify-between mt-5 cursor-pointer"
+        >
+          <p
+            class="text-veryDarkBlue font-normal hover:text-softRed transition-[color] duration-[0.3s]"
+          >
+            What is Bookmark?
+          </p>
+          <img
+            class="transition-[transform] duration-[0.3s]"
+            id="accord-arrow"
+            src="./Assests/images/icon-arrow.svg"
+          />
+        </div>
+        <div id="accord-1-text" class="w-[90%] md:w-[60%] mx-auto mt-10 hidden">
+          <p class="text-grayishBlue">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+            quis quam ornare mattis.
+          </p>
+        </div>
+
+        <hr class="mt-6 lg:w-[60%] w-full mx-auto" />
       </div>
     </section>
 

@@ -13,7 +13,9 @@ module.exports = {
         slideup: "slideup 0.8s linear",
         slidedown: "slidedown 0.8s linear",
         slideright: "slideright 0.8s linear",
+        shiftup: "shiftup 0.8s linear both",
         textfadein: "textfadein 0.8s linear",
+        fasttextfadein: "fasttextfadein 0.5s linear",
       },
       keyframes: {
         slideup: {
@@ -31,6 +33,14 @@ module.exports = {
         textfadein: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
+        },
+        fasttextfadein: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        shiftup: {
+          "0%": { opacity: "0", transform: "translateY(25%)" },
+          "100%": { transform: "none" },
         },
       },
     },
