@@ -623,7 +623,37 @@
           Stay up-to-date with what <br class="hidden lg:block" />
           we're doing
         </p>
-        <div class="w-full mx-auto mt-5"></div>
+        <div class="w-full mx-auto mt-5">
+          <form
+            class="flex flex-col items-center lg:items-start lg:flex-row gap-x-4"
+          >
+            <div id="err" class="bg-none rounded-lg h-auto relative">
+              <input
+                id="email-input"
+                class="w-[300px] h-[50px] rounded-lg placeholder:text-grayishBlue px-6 focus:ring-offset-0 focus:ring-transparent border-0 focus:border-transparent"
+                type="email"
+                placeholder="enter your email address"
+              />
+              <img
+                id="err-img"
+                src="./Assests/images/icon-error.svg"
+                class="hidden absolute top-[1rem] right-[1rem]"
+              />
+              <p
+                id="err-text"
+                class="hidden italic text-left text-[12px] ml-2 mt-1 text-white font-medium tracking-wide"
+              >
+                Whoops make sure it's an email!
+              </p>
+            </div>
+            <button
+              class="w-[300px] lg:w-[130px] h-[50px] mt-4 lg:mt-0 bg-softRed rounded-lg text-white"
+              type="submit"
+            >
+              Contact Us
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
