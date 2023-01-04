@@ -18,6 +18,18 @@ const tab1Underline = document.querySelector("#tab-1-underline");
 const tab2Underline = document.querySelector("#tab-2-underline");
 const tab3Underline = document.querySelector("#tab-3-underline");
 const accordions = document.querySelectorAll(".accordions");
+const emailForm = document.querySelector("#email-form");
+const emailInput = document.querySelector("#email-input");
+const errBg = document.querySelector("#err");
+const errText = document.querySelector("#err-text");
+const emailRegPattern = new RegExp(
+  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+);
+
+console.log(emailForm);
+
+let currentMail = "";
+const contactBtn = document.querySelector("#contact-btn");
 
 window.addEventListener("load", () => {
   hamBurgerIcon.addEventListener("click", OpenMobileNav);
@@ -85,7 +97,7 @@ window.addEventListener("load", () => {
   /* accordion functionality */
 
   accordions.forEach((accordion) => {
-    accordion.addEventListener("click", (e) => {
+    accordion.addEventListener("click", function (e) {
       let currAccordion = e.target.children[1];
       let currAccordionArrow = e.target.children[0].children[1];
       currAccordion.classList.toggle("hidden");
@@ -96,4 +108,37 @@ window.addEventListener("load", () => {
           currAccordionArrow.classList.remove("-rotate-180"));
     });
   });
+
+  // email validation
+  emailInput.addEventListener("input", getMail);
+  contactBtn.addEventListener("click", checkCurrentEmailValidation);
+
+  function getMail(e) {
+    currentMail = e.target.value;
+    return currentMail;
+  }
+
+  function checkCurrentEmailValidation(e) {
+    e.preventDefault();
+    if (currentMail === "") {
+      errBg.classList.remove("bg-softRed");
+      errText.classList.add("hidden");
+    }
+    if (currentMail !== "") {
+      !emailRegPattern.test(currentMail)
+        ? (errBg.classList.add("bg-softRed", "h-[80px]"),
+          errText.classList.remove("hidden"))
+        : (errBg.classList.remove("bg-softRed"),
+          errText.classList.add("hidden"));
+    }
+  }
+});
+
+emailForm.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (emailRegPattern.test(currentMail)) {
+    emailForm.submit();
+    emailForm.reset();
+    return false;
+  }
 });

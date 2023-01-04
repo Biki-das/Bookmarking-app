@@ -581,12 +581,12 @@
               What about other Chromium browsers?
             </p>
             <img
-              class="pointer-events-none transition-[transform] duration-[0.3s]"
+              class="transition-[transform] duration-[0.3s]"
               src="./Assests/images/icon-arrow.svg"
             />
           </div>
           <div
-            class="pointer-events-none w-[90%] md:w-[60%] mx-auto mt-10 hidden animate-fasttextfadein"
+            class="w-[90%] md:w-[60%] mx-auto mt-10 hidden animate-fasttextfadein"
           >
             <p class="text-grayishBlue">
               Integer condimentum ipsum id imperdiet finibus. Vivamus in
@@ -620,14 +620,18 @@
           35,000+ ALREADY JOINED
         </p>
         <p class="text-white text-3xl text-center font-medium tracking-wider">
-          Stay up-to-date with what <br class="hidden lg:block" />
+          Stay up-to-date with what <br class="hidden md:block" />
           we're doing
         </p>
         <div class="w-full mx-auto mt-5">
           <form
+            id="email-form"
             class="flex flex-col items-center lg:items-start lg:flex-row gap-x-4"
           >
-            <div id="err" class="bg-none rounded-lg h-auto relative">
+            <div
+              id="err"
+              class="rounded-lg h-auto relative transition-[background] duration-[0.3s]"
+            >
               <input
                 id="email-input"
                 class="w-[300px] h-[50px] rounded-lg placeholder:text-grayishBlue px-6 focus:ring-offset-0 focus:ring-transparent border-0 focus:border-transparent"
@@ -643,10 +647,11 @@
                 id="err-text"
                 class="hidden italic text-left text-[12px] ml-2 mt-1 text-white font-medium tracking-wide"
               >
-                Whoops make sure it's an email!
+                Whoops make sure it's an email !
               </p>
             </div>
             <button
+              id="contact-btn"
               class="w-[300px] lg:w-[130px] h-[50px] mt-4 lg:mt-0 bg-softRed rounded-lg text-white"
               type="submit"
             >
