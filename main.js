@@ -123,13 +123,16 @@ window.addEventListener("load", () => {
     if (currentMail === "") {
       errBg.classList.remove("bg-softRed");
       errText.classList.add("hidden");
+      emailInput.style.border = null;
     }
     if (currentMail !== "") {
       !emailRegPattern.test(currentMail)
         ? (errBg.classList.add("bg-softRed", "h-[80px]"),
-          errText.classList.remove("hidden"))
+          errText.classList.remove("hidden"),
+          (emailInput.style.border = "2px solid hsl(0,94%,66%)"))
         : (errBg.classList.remove("bg-softRed"),
-          errText.classList.add("hidden"));
+          errText.classList.add("hidden"),
+          (emailInput.style.border = null));
     }
   }
 });
