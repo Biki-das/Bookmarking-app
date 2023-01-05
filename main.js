@@ -22,14 +22,13 @@ const emailForm = document.querySelector("#email-form");
 const emailInput = document.querySelector("#email-input");
 const errBg = document.querySelector("#err");
 const errText = document.querySelector("#err-text");
+const errImg = document.querySelector("#err-img");
 const emailRegPattern = new RegExp(
   /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 );
-
-console.log(emailForm);
+const contactBtn = document.querySelector("#contact-btn");
 
 let currentMail = "";
-const contactBtn = document.querySelector("#contact-btn");
 
 window.addEventListener("load", () => {
   hamBurgerIcon.addEventListener("click", OpenMobileNav);
@@ -123,16 +122,19 @@ window.addEventListener("load", () => {
     if (currentMail === "") {
       errBg.classList.remove("bg-softRed");
       errText.classList.add("hidden");
+      errImg.classList.add("hidden");
       emailInput.style.border = null;
     }
     if (currentMail !== "") {
       !emailRegPattern.test(currentMail)
         ? (errBg.classList.add("bg-softRed", "h-[80px]"),
           errText.classList.remove("hidden"),
-          (emailInput.style.border = "2px solid hsl(0,94%,66%)"))
+          errImg.classList.remove("hidden")(
+            (emailInput.style.border = "2px solid hsl(0,94%,66%)")
+          ))
         : (errBg.classList.remove("bg-softRed"),
           errText.classList.add("hidden"),
-          (emailInput.style.border = null));
+          errImg.classList.add("hidden")((emailInput.style.border = null)));
     }
   }
 });
